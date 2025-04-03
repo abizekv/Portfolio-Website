@@ -1,0 +1,35 @@
+/* Container to hold scrolling text */
+.scrolling-text {
+    height: 100px; /* Height to show visible lines */
+    overflow: hidden; /* Hide the overflow content */
+    position: relative;
+    background: #222;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper for all lines of text */
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    animation: scrollVertical 8s linear infinite;
+}
+
+/* Each line of text */
+.text-content {
+    text-align: center;
+    line-height: 50px; /* Ensure each line fits within the container height */
+    white-space: nowrap;
+}
+
+/* Keyframes for infinite vertical scrolling */
+@keyframes scrollVertical {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); } /* Scroll the container by half the total height */
+}

@@ -1,0 +1,122 @@
+/* * {
+    outline:1px solid red;
+} */
+
+body {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.illustration {
+    width: 400px;
+}
+
+h2 {
+    font-weight:600;
+}
+p {
+    font-size:1.2em;
+}
+
+.navbar-brand {
+    font-weight:900;
+    font-stretch: condensed;
+}
+
+.scroll {
+    position: relative;
+    display: flex;
+    max-width: 800px;
+    overflow: hidden;
+    
+    /* Standard property */
+    mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    
+    /* WebKit-specific property for compatibility */
+    -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
+.scroll div {
+    white-space: nowrap;
+    animation: scroll var(--time) linear infinite;
+    animation-delay: calc(var(--time)*-1);
+
+}
+
+.scroll div:nth-child(2) {
+    animation: scroll2 var(--time) linear infinite;
+    animation-delay: calc(var(--time)/-2);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
+.scroll div span:hover {
+    background: #3fd2f9;
+    cursor: pointer;
+}
+
+.imgBox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox img {
+    max-width: 100px;
+    scale: 0.8;
+}
+
+.card-img-top {
+    height:200px;
+    object-fit:fill;
+}
+
+.mobile-todo {
+    object-fit:contain;
+}
+
+
+footer {
+    height:300px;
+    background: #575756;
+    color:#fff;
+
+}
+
+footer span {
+    font-size:1.5em;
+}
+
+.footer-line {
+    height:2px;
+    background:#DADADA;
+}
+
+#contact-me a {
+    color:#fff;
+    text-decoration:none;
+
+}
+

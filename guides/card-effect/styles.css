@@ -1,0 +1,30 @@
+/* Container for the train effect */
+.train-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background: #f8f9fa;
+    padding: 20px 0;
+}
+
+/* Moving wrapper */
+.train-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: trainMove 10s linear infinite;
+}
+
+/* Animation to move cards infinitely */
+@keyframes trainMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves half since we duplicate */
+}
+
+/* Styling for Bootstrap cards */
+.card {
+    min-width: 250px; 
+    max-width: 250px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
