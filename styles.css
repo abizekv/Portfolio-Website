@@ -94,7 +94,7 @@ p {
     object-fit:fill;
 }
 
-.mobile-todo {
+.portrait-image {
     object-fit:contain;
 }
 
@@ -126,3 +126,6 @@ footer .logo {
     font-weight:900;
 }
 
+a {
+    text-decoration:none;
+}
