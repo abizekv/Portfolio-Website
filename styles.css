@@ -18,12 +18,13 @@ h2 {
     font-weight:600;
 }
 p {
-    font-size:1.2em;
+    font-size:1.2rem;
 }
 
 .navbar-brand {
     font-weight:900;
     font-stretch: condensed;
+    color:#575756;
 }
 
 .scroll {
@@ -118,5 +119,10 @@ footer span {
     color:#fff;
     text-decoration:none;
 
+}
+
+footer .logo {
+    font-size:20px;
+    font-weight:900;
 }
 
