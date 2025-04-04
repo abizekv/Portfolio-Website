@@ -7,24 +7,34 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 
 .illustration {
     width: 400px;
 }
 
 h2 {
-    font-weight:600;
+    font-weight: 600;
 }
+
 p {
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
 
 .navbar-brand {
-    font-weight:900;
+    font-weight: 900;
     font-stretch: condensed;
-    color:#575756;
+    color: #575756;
+}
+
+.navbar-nav .nav-link {
+    font-weight:600;
+    transition: all 0.3s ease-in;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000;
 }
 
 .scroll {
@@ -32,10 +42,10 @@ p {
     display: flex;
     max-width: 800px;
     overflow: hidden;
-    
+
     /* Standard property */
     mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
-    
+
     /* WebKit-specific property for compatibility */
     -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
 }
@@ -90,44 +100,44 @@ p {
 }
 
 .card-img-top {
-    height:200px;
-    object-fit:fill;
+    height: 200px;
+    object-fit: fill;
 }
 
 .portrait-image {
-    object-fit:contain;
+    object-fit: contain;
 }
 
 
 footer {
-    height:300px;
+    height: 300px;
     background: #575756;
-    color:#fff;
+    color: #fff;
 
 }
 
 footer span {
-    font-size:1.5em;
+    font-size: 1.5em;
 }
 
 .footer-line {
-    height:2px;
-    background:#DADADA;
+    height: 2px;
+    background: #DADADA;
 }
 
 #contact-me a {
-    color:#fff;
-    text-decoration:none;
+    color: #fff;
+    text-decoration: none;
 
 }
 
 footer .logo {
-    font-size:20px;
-    font-weight:900;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .card {
@@ -140,5 +150,9 @@ a {
 }
 
 .blur {
-    filter:blur(5px);
+    filter: blur(2px);
+}
+
+.bold {
+    font-weight: 600;
 }
